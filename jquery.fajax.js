@@ -1,3 +1,12 @@
+
+/*!
+ * jQuery fajax v1.0
+ * https://github.com/reggi/fajax
+ * Licensed under the MIT license.
+ * Copyright 2012, Thomas Reggi & Keith Roehrenbeck
+ * Date: Fri May 04 03:02:39 2012 -0500
+ */
+
 (function( $ ) {
   $.fajax = function(args) {
     var _success = args.success || function(){};
