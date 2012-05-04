@@ -20,12 +20,12 @@ code.
 
 ```
 $.fajax({
-  url: 'api/cojax.json',
+  url: 'api/fajax.json',
   dataType: 'json',
   success: function(data1){
     console.log('1 success 1');
     $.fajax({
-      url: 'api/cojax.json',
+      url: 'api/fajax.json',
       dataType: 'json',
       success: function(data2){
         console.log('2 success');
