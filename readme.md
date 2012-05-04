@@ -6,13 +6,13 @@
 
 **fajax** stands for *finished asyncronous javascript xml*
 
-**fajax** keeps jquery's ajax function fully intact and only enhances it *(adds **finished** agrument)*.
+**fajax** keeps jquery's ajax function fully intact and only enhances it *(adds `finished` agrument)*.
 
-**fajax**'s purpose is to create a handler for when the ajax's success function is `finished`. You may be thinking that ajax already has this in [`complete(jqXHR, textStatus)`](http://api.jquery.com/jQuery.ajax/ "ajax jquery documentation"), what `complete` does is fire when success is done, which is valid, -but it will overlook nested ajax calls, where the `finished` argument will fire when the fajax request's within is `success` argument complete. 
+**fajax**'s purpose is to create a handler for when the ajax's success function is `finished`. You may be thinking that ajax already has this in the [`complete(jqXHR, textStatus)`](http://api.jquery.com/jQuery.ajax/ "ajax jquery documentation") argument. What `complete` does is fire when success is done, but does not include ajax calls within success. The `finished` argument will fire when the fajax request within is `success` argument is complete. 
 
 **fajax** was originally named cojax, but I decided to rename it to promote it's asynchrony.
 
-**fajax**'s inception started on [stackoverflow](http://stackoverflow.com/questions/10344136/ajax-when-success-is-complete) where I asked the question "ajax when success is complete" luckly [@kroehre](http://stackoverflow.com/users/733755/kroehre) aka [Keith Roehrenbeck](https://twitter.com/#!/kroehre) responded with a brilliant solution. I've taken Keith's codebase and made it support multiple instances as well as compartmentalize its variables, into this package.
+**fajax**'s inception started on [stackoverflow](http://stackoverflow.com/questions/10344136/ajax-when-success-is-complete) where I asked the question, "ajax when success is complete". Luckly [@kroehre](http://stackoverflow.com/users/733755/kroehre) aka [Keith Roehrenbeck](https://twitter.com/#!/kroehre) responded with a brilliant solution. I've taken Keith's codebase and made it support multiple instances as well as compartmentalize its variables.
 
 ###Example.1 : Regular nesting
 
