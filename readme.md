@@ -2,6 +2,8 @@
 
 ###Description
 
+**fajax** pronounciation [(*eff-ay-jaks*) or (*fahj-aks*)].
+
 **fajax** is a simple function that replaces jquery's ajax function.
 
 **fajax** stands for *finished asyncronous javascript xml*
